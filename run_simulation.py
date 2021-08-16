@@ -5,6 +5,8 @@ Simulates a chosen system
 (Spring Particle, Charge Particle or Gravity Particles)
 writes observational data and schema to /data
 """
+import os
+
 from simulations.synthetic_sim import ChargedParticlesSim, SpringSim
 import time
 import numpy as np
@@ -47,6 +49,8 @@ np.random.seed(args.seed)
 print(suffix)
 
 experiment = Experiment()
+if not os.path.exists('experiment.json'):
+    experiment.save()
 
 # *** Control Variables ***
 experiment.set_numb_of_particles(num_of_particles=args.n_balls)
