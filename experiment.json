@@ -1,0 +1,82 @@
+{
+    "exp_8:13:2021-0": {
+        "settings": {
+            "tau_min": 1,
+            "tau_max": 10,
+            "traj_length": 0,
+            "sample_freq": 0,
+            "period": 0,
+            "initial_velocity": 0.0
+        },
+        "results": false
+    },
+    "exp_8:15:2021-2": {
+        "settings": {
+            "tau_min": 1,
+            "tau_max": 5,
+            "traj_length": 5000,
+            "sample_freq": 100,
+            "period": 1000,
+            "num_sim": 10,
+            "number_of_particles": 5,
+            "initial_velocity": 0.0
+        },
+        "variables": {
+            "particles": [
+                "p_0_x_position",
+                "p_1_x_position",
+                "p_2_x_position",
+                "p_3_x_position",
+                "p_4_x_position",
+                "p_0_y_position",
+                "p_1_y_position",
+                "p_2_y_position",
+                "p_3_y_position",
+                "p_4_y_position",
+                "p_0_x_velocity",
+                "p_1_x_velocity",
+                "p_2_x_velocity",
+                "p_3_x_velocity",
+                "p_4_x_velocity",
+                "p_0_y_velocity",
+                "p_1_y_velocity",
+                "p_2_y_velocity",
+                "p_3_y_velocity",
+                "p_4_y_velocity"
+            ],
+            "springs": [
+                "s_0_1",
+                "s_0_2",
+                "s_0_3",
+                "s_0_4",
+                "s_1_0",
+                "s_1_2",
+                "s_1_3",
+                "s_1_4",
+                "s_2_0",
+                "s_2_1",
+                "s_2_3",
+                "s_2_4",
+                "s_3_0",
+                "s_3_1",
+                "s_3_2",
+                "s_3_4",
+                "s_4_0",
+                "s_4_1",
+                "s_4_2",
+                "s_4_3"
+            ]
+        },
+        "results": {
+            "conducted": true,
+            "tau": 5,
+            "p_threshold": 0.02,
+            "auroc": {
+                "mean": 0.7693452380952379,
+                "max": 0.8452380952380951,
+                "min": 0.5833333333333333,
+                "std": 0.1079151235673565
+            }
+        }
+    }
+}
