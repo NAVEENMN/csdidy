@@ -28,6 +28,7 @@ parser.add_argument('--seed', type=int, default=42,
                     help='Random seed.')
 parser.add_argument('--min_change_step', type=int, default=1000, help='minimum step of changing interaction')
 parser.add_argument('--max_change_step', type=int, default=1000, help='maximum step of changing interaction')
+parser.add_argument('--data_path', default='/Users/naveenmysore/Documents/data/csdi_data')
 args = parser.parse_args()
 
 if args.simulation == 'springs':
@@ -102,9 +103,9 @@ def generate_dataset(num_sims, length, sample_freq):
 
 print('Running simulations..')
 generate_dataset(args.num_train, args.length, args.sample_freq)
-particle_observations.save_observations(path='/Users/naveenmysore/Documents/data/csdi_data/',
+particle_observations.save_observations(path=args.data_path,
                                         name=f'observations_{experiment.get_id()}')
-spring_observations.save_observations(path='/Users/naveenmysore/Documents/data/csdi_data/',
+spring_observations.save_observations(path=args.data_path,
                                       name=f'springs_{experiment.get_id()}')
 experiment.save()
 print('Saved.')

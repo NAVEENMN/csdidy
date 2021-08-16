@@ -22,7 +22,7 @@ import logging
 logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
 
 parser = argparse.ArgumentParser(description='Control variables for PC Algorithm.')
-parser.add_argument('--path', default='/Users/naveenmysore/Documents/data/csdi_data')
+parser.add_argument('--data_path', default='/Users/naveenmysore/Documents/data/csdi_data')
 parser.add_argument('--pv', default=0.02, help='Threshold p value', type=float)
 parser.add_argument('--tau_min', default=1, help='Tau min', type=int)
 parser.add_argument('--tau_max', default=5, help='Tau max', type=int)
@@ -46,8 +46,8 @@ particle_vars, spring_vars = experiment.get_vars()
 variables_dim_1 = [var for var in particle_vars if 'x_position' in var]
 variables_dim_2 = [var for var in particle_vars if 'y_position' in var]
 
-data_observations_path = os.path.join(args.path, f'observations_{experiment.get_id()}.csv')
-springs_observations_path = os.path.join(args.path, f'springs_{experiment.get_id()}.csv')
+data_observations_path = os.path.join(args.data_path, f'observations_{experiment.get_id()}.csv')
+springs_observations_path = os.path.join(args.data_path, f'springs_{experiment.get_id()}.csv')
 
 
 def load_observations(path, _variables):
