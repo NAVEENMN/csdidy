@@ -32,21 +32,7 @@ parser.add_argument('--min_change_step', type=int, default=1000, help='minimum s
 parser.add_argument('--max_change_step', type=int, default=1000, help='maximum step of changing interaction')
 parser.add_argument('--data_path', default='/Users/naveenmysore/Documents/data/csdi_data')
 args = parser.parse_args()
-
-if args.simulation == 'springs':
-    sim = SpringSim(noise_var=0.0, n_balls=args.n_balls)
-    suffix = '_springs'
-elif args.simulation == 'charged':
-    sim = ChargedParticlesSim(noise_var=0.0, n_balls=args.n_balls)
-    suffix = '_charged'
-else:
-    raise ValueError('Simulation {} not implemented'.format(args.simulation))
-
-suffix += '_{}_min{}_max{}'.format(str(args.n_balls),args.min_change_step,args.max_change_step)
-
-np.random.seed(args.seed)
-
-print(suffix)
+#np.random.seed(args.seed)
 
 experiment = Experiment()
 if not os.path.exists('experiment.json'):
@@ -106,6 +92,17 @@ def generate_dataset(num_sims, length, sample_freq):
 
 
 print('Running simulations..')
+if args.simulation == 'springs':
+    sim = SpringSim(noise_var=0.0, n_balls=args.n_balls)
+    suffix = '_springs'
+elif args.simulation == 'charged':
+    sim = ChargedParticlesSim(noise_var=0.0, n_balls=args.n_balls)
+    suffix = '_charged'
+else:
+    raise ValueError('Simulation {} not implemented'.format(args.simulation))
+
+suffix += '_{}_min{}_max{}'.format(str(args.n_balls), args.min_change_step,args.max_change_step)
+print(suffix)
 generate_dataset(args.num_train, args.length, args.sample_freq)
 particle_observations.save_observations(path=args.data_path,
                                         name=f'observations_{experiment.get_id()}')
