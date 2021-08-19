@@ -13,7 +13,7 @@ class SpringSim(object):
         self.noise_var = noise_var
 
         self._spring_types = np.array([0., 0.5, 1.])
-        self._delta_T = 0.001
+        self._delta_T = 0.01
         self._max_F = 0.1 / self._delta_T
 
     def _energy(self, loc, vel, edges):
@@ -70,7 +70,7 @@ class SpringSim(object):
         return dist
 
     def sample_trajectory_dynamic(self, T=10000, sample_freq=10,
-                          spring_prob=[1. / 2 , 0, 1./2],
+                          spring_prob=[1./2 , 0, 1./2],
                           min_step=50, max_step=200):
         n = self.n_balls
         assert (T % sample_freq == 0)
@@ -186,7 +186,6 @@ class SpringSim(object):
 
         # disables division by zero warning, since I fix it with fill_diagonal
         with np.errstate(divide='ignore'):
-
             forces_size = - self.interaction_strength * edges
             np.fill_diagonal(forces_size,
                              0)  # self forces are zero (fixes division by zero)

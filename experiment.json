@@ -78,5 +78,404 @@
                 "std": 0.1079151235673565
             }
         }
+    },
+    "exp_8:19:2021-3": {
+        "settings": {
+            "tau_min": 1,
+            "tau_max": 10,
+            "traj_length": 5000,
+            "sample_freq": 100,
+            "period": 1000,
+            "num_sim": 10,
+            "number_of_particles": 4,
+            "initial_velocity": 0.0
+        },
+        "variables": {
+            "particles": [
+                "p_0_x_position",
+                "p_1_x_position",
+                "p_2_x_position",
+                "p_3_x_position",
+                "p_0_y_position",
+                "p_1_y_position",
+                "p_2_y_position",
+                "p_3_y_position",
+                "p_0_x_velocity",
+                "p_1_x_velocity",
+                "p_2_x_velocity",
+                "p_3_x_velocity",
+                "p_0_y_velocity",
+                "p_1_y_velocity",
+                "p_2_y_velocity",
+                "p_3_y_velocity"
+            ],
+            "springs": [
+                "s_0_1",
+                "s_0_2",
+                "s_0_3",
+                "s_1_0",
+                "s_1_2",
+                "s_1_3",
+                "s_2_0",
+                "s_2_1",
+                "s_2_3",
+                "s_3_0",
+                "s_3_1",
+                "s_3_2"
+            ]
+        },
+        "results": {
+            "conducted": false,
+            "tau": null,
+            "p_threshold": null,
+            "auroc": {
+                "mean": null,
+                "max": null,
+                "min": null,
+                "std": null
+            }
+        }
+    },
+    "exp_8:19:2021-4": {
+        "settings": {
+            "tau_min": 1,
+            "tau_max": 10,
+            "traj_length": 5000,
+            "sample_freq": 100,
+            "period": 1000,
+            "num_sim": 10,
+            "number_of_particles": 4,
+            "initial_velocity": 0.0
+        },
+        "variables": {
+            "particles": [
+                "p_0_x_position",
+                "p_1_x_position",
+                "p_2_x_position",
+                "p_3_x_position",
+                "p_0_y_position",
+                "p_1_y_position",
+                "p_2_y_position",
+                "p_3_y_position",
+                "p_0_x_velocity",
+                "p_1_x_velocity",
+                "p_2_x_velocity",
+                "p_3_x_velocity",
+                "p_0_y_velocity",
+                "p_1_y_velocity",
+                "p_2_y_velocity",
+                "p_3_y_velocity"
+            ],
+            "springs": [
+                "s_0_1",
+                "s_0_2",
+                "s_0_3",
+                "s_1_0",
+                "s_1_2",
+                "s_1_3",
+                "s_2_0",
+                "s_2_1",
+                "s_2_3",
+                "s_3_0",
+                "s_3_1",
+                "s_3_2"
+            ]
+        },
+        "results": {
+            "conducted": false,
+            "tau": null,
+            "p_threshold": null,
+            "auroc": {
+                "mean": null,
+                "max": null,
+                "min": null,
+                "std": null
+            }
+        }
+    },
+    "exp_8:19:2021-5": {
+        "settings": {
+            "tau_min": 1,
+            "tau_max": 10,
+            "traj_length": 5000,
+            "sample_freq": 100,
+            "period": 1000,
+            "num_sim": 10,
+            "number_of_particles": 4,
+            "initial_velocity": 0.0
+        },
+        "variables": {
+            "particles": [
+                "p_0_x_position",
+                "p_1_x_position",
+                "p_2_x_position",
+                "p_3_x_position",
+                "p_0_y_position",
+                "p_1_y_position",
+                "p_2_y_position",
+                "p_3_y_position",
+                "p_0_x_velocity",
+                "p_1_x_velocity",
+                "p_2_x_velocity",
+                "p_3_x_velocity",
+                "p_0_y_velocity",
+                "p_1_y_velocity",
+                "p_2_y_velocity",
+                "p_3_y_velocity"
+            ],
+            "springs": [
+                "s_0_1",
+                "s_0_2",
+                "s_0_3",
+                "s_1_0",
+                "s_1_2",
+                "s_1_3",
+                "s_2_0",
+                "s_2_1",
+                "s_2_3",
+                "s_3_0",
+                "s_3_1",
+                "s_3_2"
+            ]
+        },
+        "results": {
+            "conducted": false,
+            "tau": null,
+            "p_threshold": null,
+            "auroc": {
+                "mean": null,
+                "max": null,
+                "min": null,
+                "std": null
+            }
+        }
+    },
+    "exp_8:19:2021-6": {
+        "settings": {
+            "tau_min": 1,
+            "tau_max": 10,
+            "traj_length": 5000,
+            "sample_freq": 100,
+            "period": 1000,
+            "num_sim": 10,
+            "number_of_particles": 4,
+            "initial_velocity": 0.0
+        },
+        "variables": {
+            "particles": [
+                "p_0_x_position",
+                "p_1_x_position",
+                "p_2_x_position",
+                "p_3_x_position",
+                "p_0_y_position",
+                "p_1_y_position",
+                "p_2_y_position",
+                "p_3_y_position",
+                "p_0_x_velocity",
+                "p_1_x_velocity",
+                "p_2_x_velocity",
+                "p_3_x_velocity",
+                "p_0_y_velocity",
+                "p_1_y_velocity",
+                "p_2_y_velocity",
+                "p_3_y_velocity"
+            ],
+            "springs": [
+                "s_0_1",
+                "s_0_2",
+                "s_0_3",
+                "s_1_0",
+                "s_1_2",
+                "s_1_3",
+                "s_2_0",
+                "s_2_1",
+                "s_2_3",
+                "s_3_0",
+                "s_3_1",
+                "s_3_2"
+            ]
+        },
+        "results": {
+            "conducted": false,
+            "tau": null,
+            "p_threshold": null,
+            "auroc": {
+                "mean": null,
+                "max": null,
+                "min": null,
+                "std": null
+            }
+        }
+    },
+    "exp_8:19:2021-7": {
+        "settings": {
+            "tau_min": 1,
+            "tau_max": 10,
+            "traj_length": 5000,
+            "sample_freq": 100,
+            "period": 1000,
+            "num_sim": 10,
+            "number_of_particles": 4,
+            "initial_velocity": 0.0
+        },
+        "variables": {
+            "particles": [
+                "p_0_x_position",
+                "p_1_x_position",
+                "p_2_x_position",
+                "p_3_x_position",
+                "p_0_y_position",
+                "p_1_y_position",
+                "p_2_y_position",
+                "p_3_y_position",
+                "p_0_x_velocity",
+                "p_1_x_velocity",
+                "p_2_x_velocity",
+                "p_3_x_velocity",
+                "p_0_y_velocity",
+                "p_1_y_velocity",
+                "p_2_y_velocity",
+                "p_3_y_velocity"
+            ],
+            "springs": [
+                "s_0_1",
+                "s_0_2",
+                "s_0_3",
+                "s_1_0",
+                "s_1_2",
+                "s_1_3",
+                "s_2_0",
+                "s_2_1",
+                "s_2_3",
+                "s_3_0",
+                "s_3_1",
+                "s_3_2"
+            ]
+        },
+        "results": {
+            "conducted": false,
+            "tau": null,
+            "p_threshold": null,
+            "auroc": {
+                "mean": null,
+                "max": null,
+                "min": null,
+                "std": null
+            }
+        }
+    },
+    "exp_8:19:2021-8": {
+        "settings": {
+            "tau_min": 1,
+            "tau_max": 10,
+            "traj_length": 5000,
+            "sample_freq": 10,
+            "period": 1000,
+            "num_sim": 10,
+            "number_of_particles": 4,
+            "initial_velocity": 0.0
+        },
+        "variables": {
+            "particles": [
+                "p_0_x_position",
+                "p_1_x_position",
+                "p_2_x_position",
+                "p_3_x_position",
+                "p_0_y_position",
+                "p_1_y_position",
+                "p_2_y_position",
+                "p_3_y_position",
+                "p_0_x_velocity",
+                "p_1_x_velocity",
+                "p_2_x_velocity",
+                "p_3_x_velocity",
+                "p_0_y_velocity",
+                "p_1_y_velocity",
+                "p_2_y_velocity",
+                "p_3_y_velocity"
+            ],
+            "springs": [
+                "s_0_1",
+                "s_0_2",
+                "s_0_3",
+                "s_1_0",
+                "s_1_2",
+                "s_1_3",
+                "s_2_0",
+                "s_2_1",
+                "s_2_3",
+                "s_3_0",
+                "s_3_1",
+                "s_3_2"
+            ]
+        },
+        "results": {
+            "conducted": false,
+            "tau": null,
+            "p_threshold": null,
+            "auroc": {
+                "mean": null,
+                "max": null,
+                "min": null,
+                "std": null
+            }
+        }
+    },
+    "exp_8:19:2021-9": {
+        "settings": {
+            "tau_min": 1,
+            "tau_max": 10,
+            "traj_length": 5000,
+            "sample_freq": 10,
+            "period": 1000,
+            "num_sim": 10,
+            "number_of_particles": 4,
+            "initial_velocity": 0.0
+        },
+        "variables": {
+            "particles": [
+                "p_0_x_position",
+                "p_1_x_position",
+                "p_2_x_position",
+                "p_3_x_position",
+                "p_0_y_position",
+                "p_1_y_position",
+                "p_2_y_position",
+                "p_3_y_position",
+                "p_0_x_velocity",
+                "p_1_x_velocity",
+                "p_2_x_velocity",
+                "p_3_x_velocity",
+                "p_0_y_velocity",
+                "p_1_y_velocity",
+                "p_2_y_velocity",
+                "p_3_y_velocity"
+            ],
+            "springs": [
+                "s_0_1",
+                "s_0_2",
+                "s_0_3",
+                "s_1_0",
+                "s_1_2",
+                "s_1_3",
+                "s_2_0",
+                "s_2_1",
+                "s_2_3",
+                "s_3_0",
+                "s_3_1",
+                "s_3_2"
+            ]
+        },
+        "results": {
+            "conducted": false,
+            "tau": null,
+            "p_threshold": null,
+            "auroc": {
+                "mean": null,
+                "max": null,
+                "min": null,
+                "std": null
+            }
+        }
     }
 }
